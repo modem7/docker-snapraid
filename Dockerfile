@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:bullseye-20211011
 MAINTAINER Alex Kretzschmar <alexktz@gmail.com>
 
 ARG SNAPRAID_VERSION="11.6"
