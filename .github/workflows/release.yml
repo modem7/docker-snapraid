@@ -1,0 +1,23 @@
+name: Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build deb
+        run: bash build.sh
+
+      - name: CreateRelease
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "build/*.deb"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          allowUpdates: true
+          artifactErrorsFailBuild: true
+          tag: 11.6

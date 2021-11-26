@@ -1,6 +1,7 @@
 # modem7/docker-snapraid
 
 [![CI](https://github.com/modem7/docker-snapraid/actions/workflows/ci.yml/badge.svg)](https://github.com/modem7/docker-snapraid/actions/workflows/ci.yml)
+[![Release](https://github.com/modem7/docker-snapraid/actions/workflows/release.yml/badge.svg)](https://github.com/modem7/docker-snapraid/actions/workflows/release.yml)
 
 This container will allow you to build a Snapraid `.deb` file without installing any build dependencies on your system.
 
