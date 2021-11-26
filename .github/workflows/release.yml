@@ -3,8 +3,7 @@ name: Release
 on:
   push:
     tags:
-    - 'v11.6'
-  pull_request:
+    - '*'
   workflow_dispatch:
 
 jobs:
@@ -32,3 +31,6 @@ jobs:
         artifacts: snapraid-deb
         bodyFile: "body.md"
         token: ${{ secrets.GITHUB_TOKEN }}
+        allowUpdates: true
+        artifactErrorsFailBuild: true
+        tag: 11.6
