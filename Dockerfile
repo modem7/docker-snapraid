@@ -1,5 +1,5 @@
 FROM debian:bullseye-20211011
-MAINTAINER Alex Kretzschmar <alexktz@gmail.com>
+MAINTAINER modem7
 
 ARG SNAPRAID_VERSION="11.6"
 
