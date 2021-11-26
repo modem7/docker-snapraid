@@ -1,4 +1,4 @@
-name: CI
+name: Release
 
 on:
   push:
@@ -30,6 +30,5 @@ jobs:
     - uses: ncipollo/release-action@v1
       with:
         artifacts: snapraid-deb
-          path: build/*.deb
         bodyFile: "body.md"
         token: ${{ secrets.GITHUB_TOKEN }}
