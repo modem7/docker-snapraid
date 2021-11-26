@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    tags:
+    - 'v11.6'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build deb
+        run: bash build.sh
+
+      - name: Store archives
+        uses: actions/upload-artifact@v2
+        with:
+          name: snapraid-deb
+          path: build/*.deb
+          if-no-files-found: error
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: snapraid-deb
+          path: build/*.deb
+        bodyFile: "body.md"
+        token: ${{ secrets.GITHUB_TOKEN }}
