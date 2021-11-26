@@ -19,6 +19,6 @@ jobs:
       - name: Store archives
         uses: actions/upload-artifact@v2
         with:
-          name: snapraid-deb.zip
+          name: snapraid-deb
           path: build/*.deb
           if-no-files-found: error

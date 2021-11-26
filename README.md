@@ -1,6 +1,6 @@
-# IronicBadger/docker-snapraid
+# modem7/docker-snapraid
 
-[![CI](https://github.com/IronicBadger/docker-snapraid/actions/workflows/ci.yml/badge.svg)](https://github.com/IronicBadger/docker-snapraid/actions/workflows/ci.yml)
+[![CI](https://github.com/modem7/docker-snapraid/actions/workflows/ci.yml/badge.svg)](https://github.com/modem7/docker-snapraid/actions/workflows/ci.yml)
 
 This container will allow you to build a Snapraid `.deb` file without installing any build dependencies on your system.
 
@@ -19,4 +19,4 @@ To save building it yourself, you can also download the `.deb` file as an artifa
 
 If the version is out of date, please submit a Pull Request or open an issue.
 
-<May 2020> - This is still actively maintained but I don't seem to get notifications. I'm active on the [selfhosted.show](https://selfhosted.show/discord) discord or my email address is in the dockerfile. Give that a go if your PR sits stale for a while!
+Forked from [IronicBadger/docker-snapraid](https://github.com/ironicbadger/docker-snapraid)
