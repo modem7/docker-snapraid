@@ -8,7 +8,7 @@ This container will allow you to build a Snapraid `.deb` file without installing
 ### Usage
 
 ```sh
-./build.sh [<version>] # e.g. ./build.sh 11.5
+./build.sh [<version>] # e.g. ./build.sh 12.0
 sudo dpkg -i snapraid*.deb
 ```
 
