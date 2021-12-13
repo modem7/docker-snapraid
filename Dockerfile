@@ -1,4 +1,4 @@
-FROM debian:bullseye-20211011
+FROM debian:bullseye-20211201
 
 LABEL maintainer="Modem7"
 LABEL description="This container will allow you to build a Snapraid .deb file without installing any build dependencies on your system."
