@@ -18,6 +18,14 @@ The build script spins up a container, executes the `Dockerfile` which performs 
 
 To save building it yourself, you can also download the `.deb` file as an artifact from GitHub actions.
 
+### Installation instructions
+
+Ensure to update version number!
+```
+wget https://github.com/modem7/docker-snapraid/releases/download/12.0/snapraid-from-source.deb
+sudo dpkg -i snapraid-from-source.deb
+```
+
 If the version is out of date, please submit a Pull Request or open an issue.
 
 Forked from [IronicBadger/docker-snapraid](https://github.com/ironicbadger/docker-snapraid)
