@@ -4,9 +4,11 @@ on:
   push:
     paths:
       - Dockerfile
+      - build.sh
   pull_request:
     paths:
       - Dockerfile
+      - build.sh
   workflow_dispatch:
 
 jobs:
