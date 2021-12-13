@@ -21,7 +21,8 @@ To save building it yourself, you can also download the `.deb` file as an artifa
 ### Installation instructions
 
 Ensure to update version number!
-```wget https://github.com/modem7/docker-snapraid/releases/download/12.0/snapraid-from-source.deb
+```
+wget https://github.com/modem7/docker-snapraid/releases/download/12.0/snapraid-from-source.deb
 sudo dpkg -i snapraid-from-source.deb
 ```
 
