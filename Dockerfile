@@ -1,7 +1,7 @@
 FROM debian:bullseye-20211011
 MAINTAINER modem7
 
-ARG SNAPRAID_VERSION="11.6"
+ARG SNAPRAID_VERSION="12.0"
 
 # Builds SnapRAID from source
 RUN echo 'deb http://deb.debian.org/debian buster-backports main' > /etc/apt/sources.list.d/backports.list && \
