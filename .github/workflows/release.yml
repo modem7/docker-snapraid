@@ -20,4 +20,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           allowUpdates: true
           artifactErrorsFailBuild: true
-          tag: 11.6
+          tag: 12.0
