@@ -24,7 +24,6 @@ jobs:
 
       - name: Release
         uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
         with:
           files: build/*.deb
           body_path: https://github.com/amadvance/snapraid/blob/master/HISTORY
