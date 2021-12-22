@@ -23,13 +23,12 @@ If the version is omitted, the latest version is used.
 
 The build script spins up a container, executes the `Dockerfile` which performs the actual build from source. The script then copies the built `.deb` artifact out onto your local system ready for installation using `dpkg`.
 
-To save building it yourself, you can also download the `.deb` file as an artifact from GitHub actions.
+To save building it yourself, you can also download the `.deb` file from the [releases](https://github.com/modem7/docker-snapraid/releases) page or run WGET as below.
 
 ### Installation instructions
 
-Ensure to update version number!
 ```
-wget https://github.com/modem7/docker-snapraid/releases/download/12.0/snapraid-from-source.deb
+wget https://github.com/modem7/docker-snapraid/releases/latest/download/snapraid-from-source.deb
 sudo dpkg -i snapraid-from-source.deb
 ```
 
