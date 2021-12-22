@@ -7,14 +7,19 @@ This container will allow you to build a Snapraid `.deb` file without installing
 
 Built from source: https://github.com/amadvance/snapraid/
 
+### Pre-Requisites
+You will need a working install of [Docker](https://docs.docker.com/engine/install/) to build the container.
+
 ### Usage
+
+Either download from the [releases](https://github.com/modem7/docker-snapraid/releases) page or:
 
 ```sh
 ./build.sh [<version>] # e.g. ./build.sh 12.0
 sudo dpkg -i snapraid*.deb
 ```
 
-If the version is omitted, the default version is used.
+If the version is omitted, the latest version is used.
 
 The build script spins up a container, executes the `Dockerfile` which performs the actual build from source. The script then copies the built `.deb` artifact out onto your local system ready for installation using `dpkg`.
 

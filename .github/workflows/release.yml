@@ -21,4 +21,4 @@ jobs:
           allowUpdates: true
           artifactErrorsFailBuild: true
           tag: "12.0"
-          body: "See Release notes https://github.com/amadvance/snapraid/blob/master/HISTORY"
+          body: "See Release notes: https://github.com/amadvance/snapraid/blob/master/HISTORY"
