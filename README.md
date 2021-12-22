@@ -5,9 +5,7 @@
 
 This container will allow you to build a Snapraid `.deb` file without installing any build dependencies on your system.
 
-Built from source.
-
-https://github.com/amadvance/snapraid/
+Built from source: https://github.com/amadvance/snapraid/
 
 ### Usage
 
