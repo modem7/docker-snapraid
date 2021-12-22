@@ -13,19 +13,12 @@ jobs:
       - name: Build deb
         run: bash build.sh
 
-      # - name: CreateRelease
-        # uses: ncipollo/release-action@v1
-        # with:
-          # artifacts: "build/*.deb"
-          # token: ${{ secrets.GITHUB_TOKEN }}
-          # allowUpdates: true
-          # artifactErrorsFailBuild: true
-          # tag: "12.0"
-
-      - name: Release
-        uses: softprops/action-gh-release@v1
+      - name: CreateRelease
+        uses: ncipollo/release-action@v1
         with:
-          files: build/*.deb
-          body_path: https://github.com/amadvance/snapraid/blob/master/HISTORY
-          tag_name: vTest
-          fail_on_unmatched_files: true
+          artifacts: "build/*.deb"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          allowUpdates: true
+          artifactErrorsFailBuild: true
+          tag: "12.0"
+          body: "See Release notes https://github.com/amadvance/snapraid/blob/master/HISTORY"
