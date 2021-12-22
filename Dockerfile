@@ -3,10 +3,10 @@ FROM debian:bullseye-20211220
 LABEL maintainer="Modem7"
 LABEL description="This container will allow you to build a Snapraid .deb file without installing any build dependencies on your system."
 
-ARG SNAPRAID_VERSION="12.0"
+ARG SNAPRAID_VERSION
 
 # Builds SnapRAID from source
-RUN echo 'deb http://deb.debian.org/debian buster-backports main' > /etc/apt/sources.list.d/backports.list && \
+RUN echo 'deb http://deb.debian.org/debian bullseye-backports main' > /etc/apt/sources.list.d/backports.list && \
       apt-get update && \
       apt-get install -y \
         gcc \
