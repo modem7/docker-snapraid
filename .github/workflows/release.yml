@@ -13,12 +13,12 @@ jobs:
       - name: Build deb
         run: bash build.sh
 
-      - name: CreateRelease
+      - name: Create Release
         uses: ncipollo/release-action@v1
         with:
           artifacts: "build/*.deb"
           token: ${{ secrets.GITHUB_TOKEN }}
           allowUpdates: true
           artifactErrorsFailBuild: true
-          tag: "12.0"
+          tag: "12.1"
           body: "See Release notes: https://github.com/amadvance/snapraid/blob/master/HISTORY"
