@@ -15,5 +15,5 @@ jobs:
       id: update_file
       uses: TheLastProject/keep-remote-file-locally-up-to-date-action@v1
       with:
-        url: https://github.com/amadvance/snapraid/blob/master/HISTORY
+        url: https://raw.githubusercontent.com/amadvance/snapraid/master/HISTORY
         file_in_repo: HISTORY
