@@ -10,6 +10,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Update HISTORY file
+        id: update_file
+        uses: TheLastProject/keep-remote-file-locally-up-to-date-action@v1
+        with:
+          url: https://raw.githubusercontent.com/amadvance/snapraid/master/HISTORY
+          file_in_repo: HISTORY
+
       - name: Build deb
         run: bash build.sh
 
@@ -21,4 +28,5 @@ jobs:
           allowUpdates: true
           artifactErrorsFailBuild: true
           tag: "12.1"
-          body: "See Release notes: https://github.com/amadvance/snapraid/blob/master/HISTORY"
+          #body: "See Release notes: https://github.com/amadvance/snapraid/blob/master/HISTORY"
+          bodyfile: HISTORY
