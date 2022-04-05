@@ -1,0 +1,5 @@
+changelog_type: 'commit_message'
+commit_changelog: true
+comment_changelog: true
+include_unlabeled_changes: true
+pull_request_title_regex: '^Bump'
