@@ -1,4 +1,4 @@
-changelog_type: 'pull_request'
+changelog_type: 'commit_message'
 commit_changelog: true
 comment_changelog: true
 include_unlabeled_changes: true
