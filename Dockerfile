@@ -1,4 +1,4 @@
-FROM debian:11.3
+FROM debian:11.4
 
 LABEL maintainer="Modem7"
 LABEL description="This container will allow you to build a Snapraid .deb file without installing any build dependencies on your system."
