@@ -27,6 +27,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           allowUpdates: true
           artifactErrorsFailBuild: true
-          tag: "12.1"
+          tag: "12.2"
           #body: "See Release notes: https://github.com/amadvance/snapraid/blob/master/HISTORY"
           bodyfile: HISTORY
