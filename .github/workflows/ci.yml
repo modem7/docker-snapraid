@@ -28,6 +28,6 @@ jobs:
           if-no-files-found: error
 
       # delete-artifact
-      - uses: geekyeggo/delete-artifact@v1
+      - uses: geekyeggo/delete-artifact@v2
         with:
           name: snapraid-deb
