@@ -8,6 +8,8 @@ on_error() {
 }
 
 get_latest_snapraid_release() {
+  # grep gets the tag_name node from the API JSON
+  # sed regex extracts the version number, e.g. "12.0"
   curl --silent "https://api.github.com/repos/amadvance/snapraid/releases/latest" | \
     grep '"tag_name":' | \
     sed -E 's/.*v([^"]+)".*/\1/'
@@ -25,8 +27,8 @@ BUILD_ARGS="--build-arg SNAPRAID_VERSION=${1:-$LATEST_RELEASE_TAG}"
 
 echo "BUILD_ARGS=$BUILD_ARGS"
 
-docker build -t $IMAGE_TAG $BUILD_ARGS .
-ID=$(docker create $IMAGE_TAG)
-docker cp $ID:/build/ .
-docker rm -v $ID
-docker rmi $IMAGE_TAG
+docker build -t $IMAGE_TAG $BUILD_ARGS . 
+ID=$(docker create $IMAGE_TAG) 
+docker cp $ID:/build/ . 
+docker rm -v $ID 
+docker rmi $IMAGE_TAG 
